@@ -1,7 +1,7 @@
-import React from 'react'
+import React, { memo } from 'react'
+import { Router, Switch } from 'wouter'
 
-export default () => (
-	<div>
-		Hello suckers
-	</div>
-)
+export default memo(() => <Switch>
+	<Router path="/entry" />
+	<Router path="/" />
+</Switch>)
