@@ -1,7 +1,5 @@
 import React, { memo } from 'react'
-import { Router, Switch } from 'wouter'
+import { Route, Switch } from 'wouter'
+import Entry from './sections/Entry'
 
-export default memo(() => <Switch>
-	<Router path="/entry" />
-	<Router path="/" />
-</Switch>)
+export default memo(() => <Entry />)

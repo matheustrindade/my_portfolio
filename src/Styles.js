@@ -1,6 +1,13 @@
 import { createGlobalStyle } from 'styled-components'
+import Font from './assets/fonts/GothicA1-Regular.ttf'
 
 export default createGlobalStyle`
+
+	@font-face {
+		font-family: Gothic;
+		src: url(${Font});
+	}
+
 	// css reset
 	
 	html, body, div, span, applet, object, iframe,
@@ -17,19 +24,30 @@ export default createGlobalStyle`
 	menu, nav, output, ruby, section, summary,
 	time, mark, audio, video {
 		border: 0;
-		font: inherit;
-		font-size: 100%;
 		margin: 0;
 		padding: 0;
-		vertical-align: baseline;
 	}
-	
+	a, button {
+		cursor: pointer;
+	}
 	article, aside, details, figcaption, figure, 
 	footer, header, hgroup, menu, nav, section {
 		display: block;
 	}
 	body {
-		line-height: 1;
+		font-family: Gothic, Roboto, sans-serif;
+		font-size: 16px;
+	}
+	button {
+		background-color: transparent;
+		cursor: pointer;
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+	buton:active,
+	buton:focus {
+		outline: 0;
 	}
 	ol, ul {
 		list-style: none;
@@ -50,4 +68,5 @@ export default createGlobalStyle`
 	* {
 		box-sizing: border-box;
 	}
+	
 `

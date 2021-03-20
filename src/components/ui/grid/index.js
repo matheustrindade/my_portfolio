@@ -1,4 +1,4 @@
-import styled from 'styled'
+import styled from 'styled-components'
 
 export const Row = styled.div`
 	display: flex
@@ -30,4 +30,10 @@ export const Column = styled.div`
 
 	}};
 	padding: 0 1rem;
+`
+
+export const Container = styled.div`
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
 `
