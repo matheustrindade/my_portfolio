@@ -1,17 +1,17 @@
-.container {
+.home-icon {
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
 }
 
-.roof {
+.home-icon__roof {
     flex: .4;
     position: relative;
 }
 
-.roof::before,
-.roof::after {
+.home-icon__roof::before,
+.home-icon__roof::after {
     background-color: #e3e3e3;
     content: "";
     height: 2px;
@@ -20,21 +20,21 @@
     width: 100%;
 }
 
-.roof::before {
+.home-icon__roof::before {
     right: 50%;
     transform: translateX(-50%);
     transform-origin: right;
     transform: rotate(-45deg);
 }
 
-.roof::after {
+.home-icon__roof::after {
     left: 50%;
     transform: translateX(-50%);
     transform-origin: left;
     transform: rotate(45deg);
 }
 
-.wall {
+.home-icon__wall {
     flex: .6;
     border-top: 3px solid #3C3034;
     border-bottom: 2px solid #e3e3e3;
