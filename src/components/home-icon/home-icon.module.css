@@ -12,9 +12,9 @@
 
 .roof::before,
 .roof::after {
-    background-color: #fff;
+    background-color: #e3e3e3;
     content: "";
-    height: 1px;
+    height: 2px;
     position: absolute;
     top: 0;
     width: 100%;
@@ -37,8 +37,8 @@
 .wall {
     flex: .6;
     border-top: 3px solid #3C3034;
-    border-bottom: 1px solid #fff;
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
+    border-bottom: 2px solid #e3e3e3;
+    border-left: 2px solid #e3e3e3;
+    border-right: 2px solid #e3e3e3;
 }
 

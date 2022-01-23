@@ -4,23 +4,23 @@ import HomeIcon from '../home-icon'
 import Link from 'next/link'
 
 const Navbar = () => {
-    return <div className={navStyles.container}>
-        <div className={navStyles['home-btn']}>
+    return <nav className={navStyles.navbar}>
+        <div className={navStyles['navbar__home-btn']}>
             <Link href="/">
                 <a type='button'>
                     <HomeIcon />
                 </a>
             </Link>
         </div>
-        <div className={navStyles['actions-container']}>
-            <ul className={navStyles.actions}>
-                <li>sobre</li>
-                <li>experiências</li>
-                <li>skills</li>
-                <li>contato</li>
+        <div className={navStyles['navbar__container']}>
+            <ul className={navStyles['navbar__navigation']}>
+                <li className={navStyles['navbar__item']}>sobre</li>
+                <li className={navStyles['navbar__item']}>experiências</li>
+                <li className={navStyles['navbar__item']}>skills</li>
+                <li className={navStyles['navbar__item']}>contato</li>
             </ul>
         </div>
-    </div>
+    </nav>
 }
 
 export default Navbar

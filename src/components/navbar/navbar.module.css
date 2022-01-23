@@ -1,28 +1,40 @@
-.container {
+.navbar {
     background-color: transparent;
     display: flex;
     height: 5rem;
     left: 0;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 1.25rem 3rem;
     position: absolute;
     top: 0;
     width: 100%;
 }
 
-.home-btn {
+.navbar__home-btn {
     align-self: center;
     height: 100%;
     width: 2rem;
 }
 
-.actions-container {
+.navbar__container {
     align-self: center;
-    background-color: yellow;
+    margin-left: auto;
     height: 100%;
-    width: 2rem;
+    z-index: 1;
 }
 
-.actions {
+.navbar__navigation {
+    align-items: center;
     display: flex;
+    height: 100%;
+}
+
+.navbar__navigation .navbar__item {
+    color: #e3e3e3;
+    font-size: 1.25rem;
+    text-transform: lowercase;
+}
+
+.navbar__navigation .navbar__item:not(:last-child) {
+    margin-right: 2rem;
 }
