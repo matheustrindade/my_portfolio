@@ -3,13 +3,12 @@
 }
 
 .main {
-  min-height: 100vh;
-  padding: 4rem 0;
-  flex: 1;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  width: 100%;
 }
 
 .footer {
@@ -113,4 +112,13 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.my-img-container {
+  height: 100%;
+  position: absolute;
+  background-color: red;
+  top: 0;
+  right: 0;
+  width: 30.25rem;
 }

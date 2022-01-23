@@ -1,0 +1,28 @@
+.container {
+    background-color: transparent;
+    display: flex;
+    height: 5rem;
+    left: 0;
+    justify-content: space-between;
+    padding: 1.25rem 3rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.home-btn {
+    align-self: center;
+    height: 100%;
+    width: 2rem;
+}
+
+.actions-container {
+    align-self: center;
+    background-color: yellow;
+    height: 100%;
+    width: 2rem;
+}
+
+.actions {
+    display: flex;
+}
