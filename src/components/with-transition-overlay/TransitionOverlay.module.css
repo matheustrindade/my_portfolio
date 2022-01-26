@@ -1,0 +1,36 @@
+.transition-screen__container {
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.transition-screen__overlay {
+    background-color: #3C3034;
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    transform: translateY(100%);
+    top: 0;
+    width: 100vw;
+    z-index: 9;
+}
+
+.transition-screen__overlay--show {
+    animation: slideTop 1s ease 0s;
+}
+
+@keyframes slideTop {
+    0% {
+        transform: translateY(-100%);
+    }
+    25% {
+        transform: translateY(0%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}

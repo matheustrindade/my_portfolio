@@ -41,3 +41,16 @@
   position: absolute;
   width: 30.25rem;
 }
+
+.home__img-bg img {
+  animation: fadeIn 1s linear forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

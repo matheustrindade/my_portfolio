@@ -2,9 +2,10 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { useContext } from 'react'
 import { InternacionalizationContext } from '../src/components/i18n'
+import { withTransitionOverlay } from '../src/components/with-transition-overlay'
 import styles from '../styles/Home.module.css'
 
-export default function Home() {
+const Home = function Home() {
 
 	const { translate } = useContext(InternacionalizationContext)
 
@@ -26,3 +27,5 @@ export default function Home() {
 		</div>
 	)
 }
+
+export default withTransitionOverlay(Home)
