@@ -1,9 +1,15 @@
+import { useContext } from "react"
+import { InternacionalizationContext } from "../../src/components/i18n"
 import { withTransitionOverlay } from "../../src/components/with-transition-overlay"
+import CommonPage from "../../src/templates/common-page"
 
-const About = () => <>
-    <div style={{margin: '0 auto'}}>
-        <h1>teste</h1>
-    </div>
-</>
+const About = () => {
+
+    const { translate } = useContext(InternacionalizationContext)
+
+    return <CommonPage title={translate('ABOUT')}>
+
+    </CommonPage>
+}
 
 export default withTransitionOverlay(About)
