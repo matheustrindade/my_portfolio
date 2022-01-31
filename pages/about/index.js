@@ -32,15 +32,15 @@ const About = () => {
             </div>
         </div>
         <div className={styles['about__info']}>
-            <div className={styles['about__how-am-i']}>
-                <h2 className={styles['about__how-am-i-title']}>
-                    {translate("HOWAMI")}
+            <div className={styles['about__who-am-i']}>
+                <h2 className={styles['about__who-am-i-title']}>
+                    {translate("WHOAMI")}
                 </h2>
-                <h3 className={styles['about__how-am-i-subtitle']}>
-                    {translate("HOWAMI_SUBTITLE")}
+                <h3 className={styles['about__who-am-i-subtitle']}>
+                    {translate("WHOAMI_SUBTITLE")}
                 </h3>
-                <p className={styles['about__how-am-i-description']}>
-                    {translate("HOWAMI_DESCRIPTION")}
+                <p className={styles['about__who-am-i-description']}>
+                    {translate("WHOAMI_DESCRIPTION")}
                 </p>
             </div>
             <div className={styles['about__personsal-data']}>
