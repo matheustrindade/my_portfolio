@@ -1,0 +1,16 @@
+.info__container {
+    align-items: center;
+    display: flex;
+    font-size: 1.125rem;
+    height: 2rem;
+}
+
+.info__label {
+    color: #e3e3e3;
+}
+
+.info__value {
+    color: #979797;
+    margin-left: .5rem;
+}
+

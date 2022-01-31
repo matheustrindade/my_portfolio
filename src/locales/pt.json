@@ -1,4 +1,12 @@
 {
     "MAIN_JOB_TITLE_TEXT": "Desenvolvedor de software",
-    "ABOUT": "sobre"
+    "ABOUT": "sobre",
+    "HOWAMI": "quem sou eu?",
+    "HOWAMI_SUBTITLE": "eu sou um desenvolvedor de sistemas web",
+    "HOWAMI_DESCRIPTION": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "NAME_LABEL": "nome",
+    "AGE_LABEL": "idade",
+    "BITH_CITY_LABEL": "cidade nascimento",
+    "BITH_CITY": "São Paulo/Brasil",
+    "DOWNLOAD_CV": "download cv"
 }

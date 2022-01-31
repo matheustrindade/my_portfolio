@@ -1,0 +1,106 @@
+.about__card-container {
+    display: flex;
+    flex: .4;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    position: relative;
+}
+
+.about__info {
+    display: flex;
+    flex: .6;
+    flex-direction: column;
+    height: 100%;
+}
+
+.about__card {
+    border: 2px solid #e3e3e3;
+}
+
+.about__img-bg {
+    height: 100%;
+    position: relative;
+    width: 26.625rem;
+}
+
+.about__img-bg img {
+    animation: fadeIn 1s linear forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+.about__how-am-i {
+    flex: 1;
+    border-bottom: 2px solid rgba(227,227,255,.2);
+}
+
+.about__personsal-data {
+    flex: 1;
+}
+
+.about__how-am-i-title {
+    color: #9c7717;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: .125rem;
+    line-height: 3rem;
+}
+
+.about__how-am-i-subtitle {
+    color: #e3e3e3;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: .125rem;
+    line-height: 4rem;
+}
+
+.about__how-am-i-description {
+    color: #979797;
+    line-height: 1.125rem;
+}
+
+.about__personsal-data {
+    display: flex;
+    flex-direction: column;
+    padding-top: 2rem;
+}
+
+.about__personsal-data-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 4rem;
+}
+
+.about__personsal-data-column {
+    display: flex;
+    flex: 1 0 50%;
+    height: 2rem;
+}
+
+.about__download-cv {
+    background-color: #9c7717;
+    border: none;
+    color: #e3e3e3;
+    cursor: pointer;
+    font-size: 1.125rem;
+    margin-top: 2rem;
+    padding: .75rem 1.5rem;
+    position: relative;
+    text-transform: lowercase;
+    width: max-content;
+}
+
+.about__download-cv:active {
+    background-color: #886b21;
+    top: .25rem;
+    left: .25rem;
+}
