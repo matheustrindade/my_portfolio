@@ -8,5 +8,9 @@
     "AGE_LABEL": "idade",
     "BITH_CITY_LABEL": "cidade nascimento",
     "BITH_CITY": "São Paulo/Brasil",
-    "DOWNLOAD_CV": "download cv"
+    "DOWNLOAD_CV": "download cv",
+    "NAVBAR_ABOUT_ME": "sobre",
+    "NAVBAR_EXPERIENCES": "experiências",
+    "NAVBAR_SKILLS": "skills",
+    "NAVBAR_CONTACTE_ME": "contato"
 }

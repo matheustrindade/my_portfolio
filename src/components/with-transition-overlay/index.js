@@ -1,6 +1,6 @@
 import { useRouter } from "next/router"
 import { createContext, useContext, useEffect, useState } from "react"
-import TransitionOverlayStyle from './TransitionOverlay.module.css'
+import TransitionOverlayStyle from './transition-overlay.module.css'
 
 const TransitionOverlayContext = createContext({})
 

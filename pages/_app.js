@@ -1,8 +1,7 @@
-import Internacionalization from '../src/components/i18n'
 import '../styles/globals.css'
 import Navbar from '../src/components/navbar'
 import Head from 'next/head'
-import TansitionOverlay from '../src/components/with-transition-overlay'
+import AppProvider from '../src/components/app-provider'
 
 function MyApp({ Component, pageProps }) {
   return <>
@@ -20,12 +19,10 @@ function MyApp({ Component, pageProps }) {
         crossOrigin=""
       />
     </Head>
-    <TansitionOverlay>
-      <Internacionalization>
-        <Navbar />
-        <Component {...pageProps} />
-      </Internacionalization>
-    </TansitionOverlay>
+    <AppProvider>
+      <Navbar />
+      <Component {...pageProps} />
+    </AppProvider>
   </>
 }
 

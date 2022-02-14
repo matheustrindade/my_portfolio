@@ -1,9 +1,13 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import navStyles from './navbar.module.css'
 import HomeIcon from '../home-icon'
 import Link from 'next/link'
+import { InternacionalizationContext } from '../i18n'
 
 const Navbar = () => {
+
+    const { translate } = useContext(InternacionalizationContext)
+
     return <nav className={navStyles.navbar}>
         <div className={navStyles['navbar__home-btn']}>
             <Link href="/">
@@ -17,13 +21,13 @@ const Navbar = () => {
                 <li className={navStyles['navbar__item']}>
                     <Link href="/about">
                         <a type='button'>
-                            sobre
+                            {translate('NAVBAR_ABOUT_ME')}
                         </a>
                     </Link>
                 </li>
-                <li className={navStyles['navbar__item']}>experiências</li>
-                <li className={navStyles['navbar__item']}>skills</li>
-                <li className={navStyles['navbar__item']}>contato</li>
+                <li className={navStyles['navbar__item']}>{translate('NAVBAR_EXPERIENCES')}</li>
+                <li className={navStyles['navbar__item']}>{translate('NAVBAR_SKILLS')}</li>
+                <li className={navStyles['navbar__item']}>{translate('NAVBAR_CONTACTE_ME')}</li>
             </ul>
         </div>
     </nav>
