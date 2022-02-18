@@ -25,9 +25,27 @@ const Navbar = () => {
                         </a>
                     </Link>
                 </li>
-                <li className={navStyles['navbar__item']}>{translate('NAVBAR_EXPERIENCES')}</li>
-                <li className={navStyles['navbar__item']}>{translate('NAVBAR_SKILLS')}</li>
-                <li className={navStyles['navbar__item']}>{translate('NAVBAR_CONTACTE_ME')}</li>
+                <li className={navStyles['navbar__item']}>
+                    <Link href="/about">
+                        <a type='button'>
+                            {translate('NAVBAR_EXPERIENCES')}
+                        </a>
+                    </Link>
+                </li>
+                <li className={navStyles['navbar__item']}>
+                    <Link href="/about">
+                        <a type='button'>
+                            {translate('NAVBAR_SKILLS')}
+                        </a>
+                    </Link>
+                </li>
+                <li className={navStyles['navbar__item']}>
+                    <Link href="/about">
+                        <a type='button'>
+                            {translate('NAVBAR_CONTACTE_ME')}
+                        </a>
+                    </Link>
+                </li>
             </ul>
         </div>
     </nav>
